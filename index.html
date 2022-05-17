@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />		
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<style type="text/css">
+	body {background:darkred; display: flex; align-items: center; justify-content: center; min-height: 100vh; transition: 0.6s;}
+    body.active {background-color: grey;}
+    body.kactive {background-color: black;}
+	*{margin: 0; padding: 0; box-sizing: border-box;}
+	nav {width:390px; height:370px;  position: relative;  overflow: hidden; border-radius: 10px; background: white;}
+
+	img {width: 390px; height:370px; border-radius: 10px;  cursor: pointer; position: absolute;display: flex; flex-direction: column; }
+	nav:hover img {top: -22px; }
+	div {position: relative; width: 390px; height: 280px; background:rgba(0, 0, 0, 0.9);z-index: 100; border-radius: 10px; border-top-right-radius: 0; border-top-left-radius: 0; top:370px; transition: 0.8s;  cursor: pointer;}
+	nav:hover div {top: 90px;}
+	ul {list-style-type: none;}
+	li {position: relative; color:white; cursor: pointer; font-family: sans-serif; font-weight: bold; text-shadow: 0 0 3px white; left: 46px; line-height: 35px; top: 10px;}
+	h5 {opacity: 0.8;}
+	.h6 {font-size: 14px; }
+	.li2 {display: flex; position: relative; top: 17px;}
+	h4 {width:25px; height:25px; background:none; font-size: 14px; border-radius: 50%;position: relative; display: flex; align-items: center; justify-content: center;
+		margin-right: 14px;}
+	
+		h4.active {background:grey; color: black; font-family: sans-serif; font-weight: bold; text-shadow: 0 0 3px black; box-shadow: 0 0 8px black;}
+		.h6.i {position: relative; top:7px;}
+		.li3 {position: relative; list-style: none; display: flex; top: 22px; }
+		h2 {width: 20px; height: 20px; background: var(--clr); box-shadow: 0 0 6px white; border-radius: 50%; margin-right: 16px;}
+		.li4 {position: relative; display: flex; top: 41px; left: 65px;}
+		h1 {font-size: 14px; width: 112px; height: 30px; background: darkred; position: relative; display: flex; align-items: center; justify-content: center; border-radius: 3px;margin-right: 40px; font-family: sans-serif; font-weight: bold; text-shadow:0 0 3px white;}
+		h1:hover {transform: scale(1.03);}
+		label {position: absolute; display: flex; flex-direction: column; color: red; text-shadow: 0 0 2px kred; font-family: sans-serif; font-weight: bold; font-size: 26px; top: 10px; left: 290px; cursor: pointer;}
+		.photo2 {visibility: hidden;}
+		.photo2.active {visibility: visible;}
+       .photo3 {visibility: hidden;}
+       .photo3.active {visibility: visible;}
+       label.active {color: grey; text-shadow: 0 0 3px grey;}
+       label.kactive {color: black; text-shadow: 0 0 3px white;}
+
+       .h1.active, .h1.i.active {background:grey;}
+       .h1.kactive, .h1.i.kactive {background: black; box-shadow: 0 0 2px white;}
+
+</style>
+</head>
+<body>
+<nav>
+<img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/28625513f27f4d4a9dabacdf01020db0_9366/Essentials_3_Bantli_Tisort_Kirmizi_GL3736_01_laydown.jpg" class="photo1">
+<img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/d6667cb6ee104a0aa02dac6301023956_9366/Essentials_3_Bantli_Tisort_Gri_GL3735_01_laydown.jpg" class="photo2"><img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/f24e51fde3ed44b393e5ac630101b237_9366/Essentials_3_Bantli_Tisort_Siyah_GL3732_01_laydown.jpg" class="photo3">
+	<div>
+		<ul>
+			<li><h3>ADİDAS ORİGİNALS</h3></li>
+			<li><h5>Men's running tshirt</h5></li>
+			<li><h6 class="h6">SİZE</h6></li>
+			<li class="li2">
+				<h4>XS</h4>
+				<h4>S</h4>
+				<h4>M</h4>
+				<h4>L</h4>
+				<h4>XL</h4>
+			</li>
+			<li><h6 class="h6 i">COLOR</h6></li>
+			<li class="li3">
+				<h2 class="h21" style="--clr:darkred;"></h2>
+				<h2 class="h22" style="--clr:grey;"></h2>
+				<h2 class="h23" style="--clr:black;"></h2>
+			</li>
+			<li class="li4">
+				<h1 class="h1">BUY NOW</h1>
+				<h1 class="h1 i">ADD TO CART</h1>
+			</li> 
+			<label>29.99$</label>
+		</ul>
+	</div>
+</nav>
+
+
+<script type="">
+	
+	const h1i = document.querySelector('.h1.i');
+	const label = document.querySelector('label');
+	const h1 = document.querySelector('.h1');
+	const h21 = document.querySelector('.h21');
+	const h23 = document.querySelector('.h23');
+	const foto1 = document.querySelector('.photo1');
+	const foto2 = document.querySelector('.photo2');
+	const foto3 = document.querySelector('.photo3');
+	const h22 = document.querySelector('.h22');
+	h22.addEventListener('click',()=>{
+    foto2.classList.add('active');
+    foto1.classList.add('remove');
+    document.body.classList.add('active');
+    document.body.classList.remove('kactive');
+    foto3.classList.remove('active');
+    label.classList.add('active');
+    label.classList.remove('kactive');
+    h1.classList.add('active');
+    h1.classList.remove('kactive');
+    h1i.classList.add('active');
+    h1i.classList.remove('kactive');
+	})
+	h23.addEventListener('click',()=>{
+		foto3.classList.add('active');
+		foto2.classList.remove('active');
+		document.body.classList.remove('active');
+		document.body.classList.add('kactive');
+		label.classList.add('kactive');
+		label.classList.remove('active');
+		h1.classList.remove('active');
+        h1.classList.add('kactive');
+        h1i.classList.remove('active');
+        h1i.classList.add('kactive');
+      
+	})
+	h21.addEventListener('click',()=>{
+		foto1.classList.add('active');
+		foto2.classList.remove('active');
+		foto3.classList.remove('active');
+		document.body.classList.remove('kactive');
+		document.body.classList.remove('active');
+		label.classList.remove('active');
+		label.classList.remove('kactive');
+		h1i.classList.remove('active');
+        h1i.classList.remove('kactive');
+        h1.classList.remove('active');
+        h1.classList.remove('kactive');
+	})
+</script>
+
+<script type="text/javascript">
+	const list = document.querySelectorAll('h4');
+	function activeLink(){
+	list.forEach((item) =>
+	item.classList.remove('active'));
+	this.classList.add('active');
+	}
+	list.forEach((item) =>
+	item.addEventListener('click',activeLink));
+</script>
+
+</body>
+</html>
